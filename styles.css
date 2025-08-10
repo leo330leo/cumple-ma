@@ -1,0 +1,17 @@
+/* Quitar márgenes y hacer que el canvas ocupe toda la pantalla */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(8, 8, 8); /* Fondo para que destaquen las estrellas */
+    height: 100%;
+    width: 100%;
+}
+
+/* Canvas en posición fija */
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
