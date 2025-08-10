@@ -66,7 +66,7 @@ class Phrase {
     this.x = (Math.random() - 0.5) * canvas.width * 1.2;
     this.y = (Math.random() - 0.5) * canvas.height * 1.2;
     this.z = Math.random() * canvas.width;
-    this.speed = 15 + Math.random() * 6;
+    this.speed = 5 + Math.random() * 2;
     this.size = 12;
   }
 
@@ -121,7 +121,7 @@ class ShootingStar {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height * 0.5;
     this.length = 80 + Math.random() * 100;
-    this.speed = 10 + Math.random() * 10;
+    this.speed = 3 + Math.random() * 3;
     this.angle = Math.PI / 4;
     this.alpha = 1;
   }
@@ -162,7 +162,7 @@ class FloatingImage {
     this.x = (Math.random() - 0.5) * canvas.width * 1.2;
     this.y = (Math.random() - 0.5) * canvas.height * 1.2;
     this.z = Math.random() * canvas.width;
-    this.speed = 15 + Math.random() * 6;
+    this.speed = 5 + Math.random() * 2;
   }
 
   update() {
@@ -226,4 +226,5 @@ animate();
 window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+
 });
